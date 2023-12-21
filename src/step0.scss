@@ -1,0 +1,127 @@
+@import 'variables';
+@import 'mixins';
+
+.step-container-zero {
+  margin: auto;
+  padding-left: 110px;
+  padding-right: 110px;
+  box-sizing: border-box;
+  background-color: $text-color;
+  border-radius: 24px;
+  position: relative;
+  top: 24px;
+  height: 704px;
+  max-width: 900px;
+}
+
+.avatar {
+  background-color: $avatar-color;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-top: 25px;
+  color: #212830;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 52px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.my-name {
+  font-family: $font-family-main;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+}
+
+.my-links {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+}
+
+.my-links-items {
+  list-style: none;
+  padding: 0;
+}
+
+.my-links-items:not(:first-child) {
+  margin-left: 16px;
+}
+
+.my-links-item {
+  margin-left: 6px;
+  color: $primary-color;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px; 
+  position: relative;
+  bottom: 1px;
+}
+
+.my-links-item a {
+  color: $primary-color;
+  text-decoration: none;
+}
+
+hr {
+  margin-top: 22px;
+  border-color: rgba(0, 0, 0, 0.08);
+  height: 4px; 
+}
+
+.input-zero {
+  @include input-style(400px);
+}
+
+@media (max-width: $mobile-breakpoint) {
+  .step-container-zero {
+    padding: 15px;
+    height: auto;
+    top: 3px;
+  }
+
+  .avatar {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .header,
+  .my-name,
+  .my-links {
+    margin-left: 10px;
+  }
+
+  .info {
+    margin-top: 27px;
+    margin-left: 10px;
+  }
+
+  .my-links-item {
+    font-size: 10px;
+  }
+
+  .my-links-item {
+    bottom: 2px;
+  }
+}

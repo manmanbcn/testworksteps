@@ -1,0 +1,80 @@
+@import 'fonts.scss';
+@import 'variables';
+@import 'mixins';
+@import 'global';
+@import 'fonts';
+
+.progressbar-container {
+  position: relative;
+  top: 62px;
+}
+
+.error {
+  @include text-style;
+  color: $error-color;
+  margin-top: 5px;
+}
+
+.label-first,
+.label-zero {
+  @include text-style;
+  margin: 10px 0;
+  margin-top: 50px;
+}
+
+.navigation-buttons,
+.navigation-buttons-submit {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.button-start,
+.button-next {
+  @include button-style;
+}
+
+.button-prev {
+  @include button-style($width: 79px);
+  border: 2px solid $primary-color;
+  color: $primary-color;
+  background-color: $text-color;
+}
+
+.button-start:focus,
+.button-start:hover,
+.button-start:active,
+.button-next:focus,
+.button-next:hover,
+.button-next:active,
+.button-prev:focus,
+.button-prev:hover,
+.button-prev:active {
+  filter: brightness(90%);
+}
+
+@media (max-width: $mobile-breakpoint) {
+  .navigation-buttons,
+  .navigation-buttons-submit {
+    margin-top: 50px;
+  }
+
+  .progressbar-container {
+    top: 10px;
+  }
+
+  .label-first,
+  .label-zero {
+    margin-top: 40px;
+    width: 100%;
+    display: block;
+  }
+
+  .button-start,
+  .button-next,
+  .button-prev {
+    @include button-style($width: 90px);
+    font-size: 12px;
+  }
+}

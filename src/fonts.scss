@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'TT Travels';
+  src: url('./fonts/TravelsBold.woff2') format('woff2'),
+       url('./fonts/TravelsBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Travels';
+  src: url('./fonts/TravelsLight.woff2') format('woff2'),
+       url('./fonts/TravelsLight.woff') format('woff');
+  font-weight: 300; 
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Travels';
+  src: url('./fonts/TravelsMedium.woff2') format('woff2'),
+       url('./fonts/TravelsMedium.woff') format('woff');
+  font-weight: 500; 
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Travels';
+  src: url('./fonts/TravelsRegular.woff2') format('woff2'),
+       url('./fonts/TravelsRegular.woff') format('woff');
+  font-weight: normal; 
+  font-style: normal;
+  font-display: swap;
+}
